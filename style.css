@@ -29,62 +29,16 @@ h1:hover{
 h2{
     font-size: 1.5em;
 }
-/*MENU RETRATIL*/
-#check{
-    display: none;
-}
-#icone{
-    cursor: pointer;
-    padding: 15px;
-    position: absolute;
-    z-index:1;
-}
-#barra{
-    background-color: rgb(45, 45, 45);
-    height: 250px;
-    width: 150px;
-    position: absolute;
-    transition: all .2s linear;
-    left: -150px;
-}
-nav{
-    width: 100%;
-    position: absolute;
-    top: 60px;    
-    display: flex;
-    flex-direction: column;
-}
-nav>a{
-text-decoration: none;
-
-}
-.link{
-    background-color: #494950;
-    padding: 15px;
-    font-family: cursive;
-    font-size: 10pt;
-    transition: all .2s linear;
-    color: whitesmoke;
-    border-bottom: 2px solid black;
-    
-}
-.link:hover{
-    background-color: rgba(99, 1, 1, 0.829);
-}
-#check:checked ~ #barra{
-    transform: translateX(150px);
-    transition: 1s;
-}
 
 /*BODY*/
 #box{
-    margin-left: 15%;
+    margin-left: 10%;
     margin-top: 5%;
     margin-bottom: 10%;
     margin-right: 10%;
     background-color: rgb(77, 76, 76);
-    width: 75%;
-    height: auto;
+    width: 85%;
+    height: 80%;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
     display: flex;
@@ -96,13 +50,12 @@ text-decoration: none;
 #personagens{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .personagem{
     display: flex;
-    margin-left: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
     background-color: whitesmoke;
     width: 300px;
     height: auto;
@@ -113,6 +66,10 @@ text-decoration: none;
     align-items: center;
     text-align: justify;
     padding: 10px;
+}
+.personagem:hover{
+    box-shadow: 10px 10px 10px;
+    height: 370px;
 }
 .nome{
     padding: 5px;
@@ -125,6 +82,16 @@ text-decoration: none;
 .nome:hover{
     background-color: rgba(99, 1, 1, 0.829);
     transition: all .2s linear;
+}
+.imagens{
+    height: 180px;
+    border-radius: 2px;
+}
+.inicio{
+    text-decoration: none;
+    text-align: justify;
+    color: black;
+    margin: 2.5%;
 }
 /*PAGINAS ADICIONAIS*/
 .historia{
@@ -244,7 +211,30 @@ text-decoration: none;
     display: flex;
     flex-direction: row;
 }
+/*RESPONSIVIDADE*/
+@media(max-width:600px){
+#box{
+display: flex;
+flex-direction: column;
+height: 90%;
+margin: 5%;
+
+
+}
+#personagens{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    width: auto;
+}
+.personagem{
+    width: 50%;
+    height: auto;
+    margin:0;
+}
 .imagens{
-    height: 180px;
-    border-radius: 2px;
+    width: 50%;
+
+}
 }

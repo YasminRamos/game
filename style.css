@@ -1,0 +1,250 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    display: block;
+    
+}
+body{
+    background-color: rgb(45, 45, 45);
+}
+/*CABEÇALHO*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+h1{
+    font-family: 'Rubik Beastly', cursive;
+    color: rgb(163, 1, 1);
+    text-align: center;
+    height: 50px;
+    
+}
+h1:hover{
+    font-size: 2.5em;
+    text-shadow: 5px 10px 5px rgba(99, 1, 1, 0.829);
+    transition: 4s;
+}
+h2{
+    font-size: 1.5em;
+}
+/*MENU RETRATIL*/
+#check{
+    display: none;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index:1;
+}
+#barra{
+    background-color: rgb(45, 45, 45);
+    height: 250px;
+    width: 150px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -150px;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;    
+    display: flex;
+    flex-direction: column;
+}
+nav>a{
+text-decoration: none;
+
+}
+.link{
+    background-color: #494950;
+    padding: 15px;
+    font-family: cursive;
+    font-size: 10pt;
+    transition: all .2s linear;
+    color: whitesmoke;
+    border-bottom: 2px solid black;
+    
+}
+.link:hover{
+    background-color: rgba(99, 1, 1, 0.829);
+}
+#check:checked ~ #barra{
+    transform: translateX(150px);
+    transition: 1s;
+}
+
+/*BODY*/
+#box{
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-right: 10%;
+    background-color: rgb(77, 76, 76);
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#personagens{
+    display: flex;
+    flex-direction: row;
+}
+
+.personagem{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: whitesmoke;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+}
+.nome{
+    padding: 5px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(27, 27, 27, 0.445);
+    color: whitesmoke;
+    text-decoration: none;
+}
+.nome:hover{
+    background-color: rgba(99, 1, 1, 0.829);
+    transition: all .2s linear;
+}
+/*PAGINAS ADICIONAIS*/
+.historia{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: whitesmoke;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.15em;
+}
+#enredo{
+    margin-left: 25%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    background-color: rgb(77, 76, 76);
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.15em;
+}
+#inicio{
+    padding: 10px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(27, 27, 27, 0.445);
+}
+#inicio:hover{
+    background-color: rgba(99, 1, 1, 0.829);
+    transition: all .2s linear;
+}
+#consequencia{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: whitesmoke;
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+    font-size: 1.15em;
+}
+#inicio>a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+#morre{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(99, 1, 1);
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+    font-size: 3em;
+    color: whitesmoke;
+}
+#ganha{
+    display: flex;
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(48, 109, 48, 0.808);
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding: 5px;
+    font-size: 3em;
+    color: whitesmoke;
+}
+.botoes{
+    padding: 5px;
+    background-color: rgb(45, 45, 45);
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(27, 27, 27, 0.445);
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 5px;
+}
+.botoes:hover{
+    background-color: rgba(99, 1, 1, 0.534);
+    transition: all .2s linear;
+
+}
+#botoes{
+    display: flex;
+    flex-direction: row;
+}
+.imagens{
+    height: 180px;
+    border-radius: 2px;
+}

@@ -50,27 +50,33 @@ h2{
 #personagens{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    
+
 }
+
 
 .personagem{
     display: flex;
     background-color: whitesmoke;
-    width: 80%;
     height: auto;
+    margin:2.5%;
     border-radius: 5px;
     box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.788);
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: justify;
-    padding: 5%;
+    padding: 5%;  
+    flex-grow: 1; 
+    
 }
+
 .personagem:hover{
     box-shadow: 10px 10px 10px;
-    height: 95%;
 }
+
 .nome{
     padding: 5px;
     background-color: rgb(45, 45, 45);
@@ -84,14 +90,17 @@ h2{
     transition: all .2s linear;
 }
 .imagens{
-    height: 180px;
-    border-radius: 2px;
+    height: 150px;
+    border-radius: 1%;
+    padding: 1%
 }
 .inicio{
     text-decoration: none;
     text-align: justify;
     color: black;
-    margin: 2.5%;
+    flex-grow: 1;
+
+    
 }
 /*PAGINAS ADICIONAIS*/
 .historia{
@@ -218,8 +227,7 @@ display: flex;
 flex-direction: column;
 height: 90%;
 margin: 5%;
-
-
+width: auto;
 }
 #personagens{
     flex-direction: column;
@@ -228,13 +236,5 @@ margin: 5%;
     height: 85%;
     width: auto;
 }
-.personagem{
-    width: 50%;
-    height: auto;
-    margin:0;
-}
-.imagens{
-    width: 50%;
 
-}
 }
